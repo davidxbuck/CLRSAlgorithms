@@ -7,6 +7,10 @@ Algorithms faithful to the CLRS Algorithms book
 - Quick Sort $O(n lg n)$
 - Merge Sort $O(n lg n)$
 - Heap Sort $O(n lg n)$
+- Queue 
+- Stack
+- Linked List
+- Linked List with sentinel
 
 All of the above have accompanying pytest unit tests 
 

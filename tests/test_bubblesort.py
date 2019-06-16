@@ -1,4 +1,4 @@
-import BubbleSort
+import BubbleSortRecursive as BubbleSort
 
 
 def test_bubblesort1():
@@ -17,3 +17,9 @@ def test_bubblesort3():
     ins = BubbleSort.Array([1])
     ins.BUBBLESORT()
     assert ins.A == [1]
+
+
+def test_bubblesort4():
+    ins = BubbleSort.Array([4, 3, 2, 1])
+    ins.BUBBLESORT()
+    assert ins.A == [1, 2, 3, 4]
