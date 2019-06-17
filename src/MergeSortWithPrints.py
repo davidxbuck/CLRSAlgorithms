@@ -3,8 +3,10 @@ MERGE SORT Algorithm
 Directly following the pseudocode from CLRS
 '''
 
-from numpy import inf
 from math import floor
+
+from numpy import inf
+
 
 class Array:
 
@@ -60,7 +62,7 @@ class Array:
             q = floor((p + r + 1) / 2)
             print("Splits are {}-{} and {}-{}".format(p, q - 1, q, r))
             print("Pre-merge {} and {}".format(self.A[p:q], self.A[q:r + 1]))
-            self.MERGE_SORT(p, q-1)
+            self.MERGE_SORT(p, q - 1)
             self.MERGE_SORT(q, r)
             print("Post sub-sort {} and {}".format(self.A[p:q], self.A[q:r + 1]))
             self.MERGE(p, q, r)

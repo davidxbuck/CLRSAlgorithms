@@ -29,7 +29,7 @@ class Array:
 
     def BUBBLESORT(self, i=0):
         if i < self.length - 1:
-            for j in range(self.length - 1, i + 1, -1):
+            for j in range(self.length - 1, i, -1):
                 if self.A[j] < self.A[j - 1]:
                     self.A[j], self.A[j - 1] = self.A[j - 1], self.A[j]
             self.BUBBLESORT(i + 1)

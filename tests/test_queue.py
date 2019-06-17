@@ -58,6 +58,14 @@ def test_enqueuedequeue():
     assert queue.length == 20
 
 
+def test_enqueuedequeue2():
+    with pytest.raises(Queue.Underflow):
+        queue = Queue.Queue()
+        queue.ENQUEUE(5)
+        deq = queue.DEQUEUE()
+        deq = queue.DEQUEUE()
+
+
 def test_enqueuedequeue19():
     queue = Queue.Queue()
     for i in range(0, 19):

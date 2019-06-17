@@ -3,8 +3,10 @@ MERGE SORT Algorithm
 Directly following the pseudocode from CLRS
 '''
 
-from numpy import inf
 from math import floor
+
+from numpy import inf
+
 
 class Array:
 

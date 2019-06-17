@@ -3,8 +3,10 @@ QUEUE Algorithm
 Directly following the pseudocode from CLRS
 '''
 
+
 class Underflow(Exception):
     pass
+
 
 class Queue:
 
@@ -46,10 +48,10 @@ class Queue:
     #     else
     #         Q.head = Q.head + 1
     # return x
-    
+
     def DEQUEUE(self):
         if self.tail == self.head:
-           raise Underflow
+            raise Underflow
         else:
             x = self.Q[self.head]
             if self.head == self.length - 1:

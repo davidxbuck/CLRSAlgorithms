@@ -3,8 +3,10 @@ STACK Algorithm
 Directly following the pseudocode from CLRS
 '''
 
+
 class Underflow(Exception):
     pass
+
 
 class Stack:
 

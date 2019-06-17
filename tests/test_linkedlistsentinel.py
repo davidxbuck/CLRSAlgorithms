@@ -36,6 +36,7 @@ def test_list_insert2():
     assert y.next == x
     assert y.prev == L.nil
 
+
 def test_list_insert3():
     L = LinkedList()
     x = ListElement(20)
@@ -77,7 +78,6 @@ def test_delete():
     L.LIST_DELETE(y)
     assert z.next == x
     assert x.prev == z
-
 
 
 def test_insertanddelete():

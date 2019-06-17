@@ -4,7 +4,6 @@ Directly following the pseudocode from CLRS
 Allows for change of pivot choice (left, right or random within subArray
 '''
 
-
 from random import randint
 
 

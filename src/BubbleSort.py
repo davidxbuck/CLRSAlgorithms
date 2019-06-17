@@ -22,6 +22,6 @@ class Array:
 
     def BUBBLESORT(self):
         for i in range(0, self.length - 1):
-            for j in range(self.length - 1, i + 1, -1):
+            for j in range(self.length - 1, i, -1):
                 if self.A[j] < self.A[j - 1]:
                     self.A[j], self.A[j - 1] = self.A[j - 1], self.A[j]
