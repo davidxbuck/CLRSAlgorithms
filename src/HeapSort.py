@@ -20,10 +20,9 @@ class Heap:
         self.A = values
         self.heap_size = self.length
 
-    def hlen(self):
+    @property
+    def length(self):
         return len(self.A)
-
-    length = property(hlen)
 
     # PARENT(A, i)
     #   return ⌊i/2⌋
