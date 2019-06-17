@@ -7,14 +7,16 @@ def test_init():
     assert ht.m == 59
     assert ht.T == [None] * ht.m
 
+
 def test_h():
     ht = HashTable()
     hashes = [ht.h(x) for x in range(1000)]
     assert max(hashes) == 58
     assert min(hashes) == 0
-    assert 20 <= sum(hashes)/1000 <= 30
+    assert 20 <= sum(hashes) / 1000 <= 30
     hash2 = [ht.h(x) for x in range(1000)]
     assert hashes == hash2
+
 
 def test_insert():
     ht = HashTable()
@@ -25,9 +27,11 @@ def test_insert():
     assert ht.T[hash].head.key == 5
     assert ht.T.count(None) == ht.m - 1
 
+
 def test_failed_search():
     ht = HashTable()
     assert ht.CHAINED_HASH_SEARCH(10) == None
+
 
 def test_successful_hash_search():
     ht = HashTable()
@@ -35,11 +39,13 @@ def test_successful_hash_search():
     assert ht.CHAINED_HASH_SEARCH(5).key == 5
     assert isinstance(ht.CHAINED_HASH_SEARCH(5), ListElement)
 
+
 def test_successful_hash_search2():
     ht = HashTable()
     ht.CHAINED_HASH_INSERT(5)
     assert ht.CHAINED_HASH_SEARCH(5).key == 5
     assert isinstance(ht.CHAINED_HASH_SEARCH(5), ListElement)
+
 
 def test_successful_hash_add_and_delete():
     ht = HashTable()
@@ -48,6 +54,7 @@ def test_successful_hash_add_and_delete():
     x = ht.CHAINED_HASH_SEARCH(5)
     ht.CHAINED_HASH_DELETE(x)
     assert ht.T[hash].head == None
+
 
 def test_successful_hash_multiadd_and_delete():
     ht = HashTable()
