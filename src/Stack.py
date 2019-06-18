@@ -33,9 +33,7 @@ class Stack:
     # return S[S.top + 1]
 
     def POP(self):
-        print("Top", self.top)
         if self.STACK_EMPTY:
-            print("Top", self.top)
             raise Underflow
         self.top = self.top - 1
         return self.S[self.top]
