@@ -9,10 +9,9 @@ class Array:
     def __init__(self, values=[]):
         self.A = values
 
-    def alen(self):
+    @property
+    def length(self):
         return len(self.A)
-
-    length = property(alen)
 
     # BUBBLESORT(A)
     # for i = 1 to A.length - 1
